@@ -1,21 +1,36 @@
 body{
     color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
 h1{
     color: black;
+    margin: 1px;
 }
 h2{
     color: navy;
+    margin: 2px;
 }
 h3{
     color: navy;
+    margin: 3px;
 }
 p{
     color: rgb(33, 0, 46);
+    margin: 3px;
 }
 li{
     color: rgb(33, 0, 46);
+    margin: 4px;
 }
 a{
     color: blue;
+    margin: 3px;
+}
+.div-Upper_Bar{
+    color: aquamarine;
+    width: 100vw;
+    margin: 0;
+    padding: 0%;
+    height: 25px;
 }
