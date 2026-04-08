@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Cartão de visitas do Lucas</title>
+        <link rel="stylesheet" href="style\estilo.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="Upper_Bar">
+            <p class="title">Home page</p>
+            <button id="toggleSidebar">Toggle Sidebar</button>
+        </div>
+
+        <div class="Side_Bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="main_page">
+            <h1>Cartão de visitas do Marcos Lucas</h1>
+            <h3>Informações:</h3>
+            <p><strong>Nome:</strong> Marcos Lucas de Souza Machado<br>
+            <strong>Idade:</strong> 20 anos<br>
+            <strong>Localização:</strong> Sabará, MG<br>
+            <strong>Curso:</strong> Técnico de Informática - IFMG Sabará <strong>Concluído</strong><br>
+            <strong>Curso:</strong> Bacharelado em Sistemas de Informação - IFMG Sabará <strong>Cursando</strong><br>
+            <strong>Foto:</strong>
+            </p>
+             <figure>
+                <img src="images\Fototag.png" alt="Foto do Marcos Lucas" width="150" height="150" style="border: 5px; border-color: goldenrod; border-radius: 5px; border-style: solid;">
+            </figure>
+            <h3>Breve Apresentação:</h3>
+            <p>bom dia, sou Marcos, aluno do IFMG Sabará.<br>
+                eu tenho uma experiencia prévia com web, e é isso.
+            </p>
+            <h3>Expectativas:</h3>
+            <p>Eu espero relembrar o que aprendi no ensino técnico<br>
+                e aprender novas coisas.
+            </p>
+        </div>
+        <div class="Exp_prev">
+            <h3>Linguagens Conhecidas:</h3>
+            <ul>
+                <li>Python</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Java</li>
+                <li>.Lua</li>
+            </ul>
+        </div>
+        <div class="Links_Contatos">
+            <h3>links:</h3>
+            <ul>
+                <li><a href="https://github.com/F1reZap">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/marcos-lucas-de-souza-machado-9b1b2523a/">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@Kurourushi">YouTube 1</a></li>
+                <li><a href="https://www.youtube.com/@firezap9785">YouTube 2</a></li>
+                <li><a href="https://www.youtube.com/watch?v=bb4JkkrvbJc&list=RDbb4JkkrvbJc&start_radio=1">Lattes</a></li>
+                <!--/Link Temporario até o lattes aprovar meu curriculo/-->
+            </ul>
+            <h3>Contatos:</h3>
+            <ul>
+                <li><strong>Email:</strong> marcoslucasdesouzamachado@gmail.com</li>
+                <li><strong>Telefone:</strong> (31) 9 8217-2178</li>
+                <li><strong>Endereço:</strong> Rua ai cê quer dms né parça, 123 - Sabará, MG</li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/marcos_lucas_s_m/">@marcos_lucas_s_m</a></li>
+            </ul>
+        </div>
+        
+        
+        
+        
+        <div class="button1" style="background-color: greenyellow; margin-top: 30%">
+            <a href="https://www.youtube.com/watch?v=-9eusJRXeDs">...</a>
+        </div>
+        <script>
+            document.getElementById('toggleSidebar').addEventListener('click', function() {
+                var sidebar = document.querySelector('.Side_Bar');
+                sidebar.style.display = sidebar.style.display === 'none' ? 'flex' : 'none';
+            });
+        </script>
+    </body>
+</html>
