@@ -37,16 +37,16 @@ a{
     margin: 0%;
 }
 .Side_Bar{
-    background-color: snow;
-    display: flex;
+    background-color: gray;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: 300%;
     padding: 15px;
     margin: 0%;
     height: 100%;
-    width: 20%;
+    width: 5%;
     float: left;
 }
 .main_page{

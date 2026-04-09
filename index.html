@@ -6,27 +6,28 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <div class="Upper_Bar">
+        <div class="Upper_Bar" id="home">
             <p class="title">Home page</p>
-            <button id="toggleSidebar">Toggle Sidebar</button>
+            <img src="images/hmbr.png" alt="MenuIcon" class="menu-icon" width="25" height="25" id="toggleSidebar">
+            <!--/<button id="toggleSidebar">Toggle Sidebar</button>/-->
         </div>
 
         <div class="Side_Bar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
-        <div class="main_page">
+        <div class="main_page" id="sobre">
             <h1>Cartão de visitas do Marcos Lucas</h1>
             <h3>Informações:</h3>
             <p><strong>Nome:</strong> Marcos Lucas de Souza Machado<br>
             <strong>Idade:</strong> 20 anos<br>
             <strong>Localização:</strong> Sabará, MG<br>
-            <strong>Curso:</strong> Técnico de Informática - IFMG Sabará <strong>Concluído</strong><br>
-            <strong>Curso:</strong> Bacharelado em Sistemas de Informação - IFMG Sabará <strong>Cursando</strong><br>
+            <strong>Curso:</strong> Técnico de Informática - IFMG Sabará - <strong>Concluído</strong><br>
+            <strong>Curso:</strong> Bacharelado em Sistemas de Informação - IFMG Sabará - <strong>Cursando</strong><br>
             <strong>Foto:</strong>
             </p>
              <figure>
@@ -41,7 +42,7 @@
                 e aprender novas coisas.
             </p>
         </div>
-        <div class="Exp_prev">
+        <div class="Exp_prev" id="projetos">
             <h3>Linguagens Conhecidas:</h3>
             <ul>
                 <li>Python</li>
@@ -52,7 +53,7 @@
                 <li>.Lua</li>
             </ul>
         </div>
-        <div class="Links_Contatos">
+        <div class="Links_Contatos" id="contato">
             <h3>links:</h3>
             <ul>
                 <li><a href="https://github.com/F1reZap">GitHub</a></li>
