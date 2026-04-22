@@ -36,7 +36,7 @@ table{
     color: navy;
     margin: 3px;
 }
-.Upper_Bar{
+.header{
     background-color: aquamarine;
     display: flex;
     flex-direction: row;
