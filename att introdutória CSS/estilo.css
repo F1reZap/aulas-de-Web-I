@@ -1,0 +1,60 @@
+h1{
+    color: navy;
+    margin: 1px;
+    font-family: Verdana;
+    text-align: center;
+}
+em{
+    color: skyblue;
+    font-style: italic;
+    margin: 1px;
+}
+strong{
+    color: black;
+    font-weight: bold;
+    background-color: red;
+    margin: 1px;
+}
+h2{
+    color: skyblue;
+    margin: 2px;
+    text-align: center;
+    font-family: Verdana;
+}
+p{
+    color: rgb(33, 0, 46);
+    margin: 3px;
+    font-family: Arial;
+    line-height: 2;
+}
+#p1{
+    text-align: right;
+}
+#p2{
+    text-align: center;
+}
+#p3{
+    text-align: left;
+}
+#p4{
+    text-align: right;
+}
+#p5{
+    text-align: center;
+}
+#p6{
+    text-align: left;
+}
+#p7{
+    text-align: right;
+}
+#rodape{
+    text-align: center;
+    letter-spacing: 20px;
+}
+.erro_gramatical{
+    text-decoration: underline wavy green;
+}
+.erro_ortografico{
+    text-decoration: underline wavy red;
+}
