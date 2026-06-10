@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frieren</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .foto-interativa {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s; 
+        }
+
+        .foto-interativa:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Frieren ai ó</h2>
+
+    <img 
+        id="foto"
+        class="foto-interativa"
+        src="imgs/img5_PB.jpg" 
+        alt="Foto em Preto e Branco"
+        onmouseover="colorir()"
+        onmouseout="entristecer()"
+    >
+
+    <script>
+        const imagem = document.getElementById('foto');
+
+        function colorir() {
+            imagem.src = "imgs/img5_COL.jpg";
+            imagem.alt = "Foto Colorida";
+        }
+
+        function entristecer() {
+            imagem.src = "imgs/img5_PB.jpg";
+            imagem.alt = "Foto em Preto e Branco";
+        }
+    </script>
+
+</body>
+</html>

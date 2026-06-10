@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudei a cor de fundo assim</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid white;
+            border-radius: 8px;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-verde {
+            background-color: #2ecc71;
+        }
+
+        .btn-laranja {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn-verde" onclick="mudarCor('green')">Verde</button>
+    <button class="btn-laranja" onclick="mudarCor('orange')">Laranja</button>
+
+    <script>
+        function mudarCor(cor) {
+            document.body.style.backgroundColor = cor;
+        }
+    </script>
+
+</body>
+</html>

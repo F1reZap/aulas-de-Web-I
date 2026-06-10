@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heyoooow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .paragrafo-dinamico {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="gerarParagrafos()">Criar Parágrafos</button>
+
+    <div id="container-paragrafos"></div>
+
+    <script>
+        function gerarParagrafos() {
+            const container = document.getElementById('container-paragrafos');
+            
+            container.innerHTML = '';
+
+            const configuracoes = [
+                { cor: 'lightgray', texto: 'Este é o parágrafo Cinza.' },
+                { cor: 'lightblue', texto: 'Este é o parágrafo Azul.' },
+                { cor: 'lightyellow', texto: 'Este é o parágrafo Amarelo.' },
+                { cor: 'lightcoral', texto: 'Este é o parágrafo Vermelho.' }
+            ];
+
+            configuracoes.forEach(item => {
+                const novoParagrafo = document.createElement('p');
+                
+                novoParagrafo.innerText = item.texto;
+                
+                novoParagrafo.className = 'paragrafo-dinamico';
+                
+                novoParagrafo.style.backgroundColor = item.cor;
+                
+                container.appendChild(novoParagrafo);
+            });
+        }
+    </script>
+
+</body>
+</html>
