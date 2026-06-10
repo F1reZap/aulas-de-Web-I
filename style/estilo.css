@@ -36,6 +36,11 @@ table{
     color: navy;
     margin: 3px;
 }
+.img-responsiva {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+}
 .header{
     background-color: aquamarine;
     display: flex;
@@ -134,4 +139,30 @@ table{
     border-style: solid;
     border-width: 2px;
     border-color: silver;    
+}
+@media (max-width: 600px) {
+    .main_page, .Exp_prev, .Links_Contatos, .teste_table, .video, .projetos {
+        width: 90%;       
+        margin-left: 5%;  
+        height: auto;     
+    }
+    
+    .Side_Bar {
+        width: 50%;       
+    }
+    
+    iframe {
+        width: 100%;      
+        height: auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .main_page, .Exp_prev, .Links_Contatos, .teste_table, .video, .projetos {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .Side_Bar {
+        width: 20%;
+    }
 }
